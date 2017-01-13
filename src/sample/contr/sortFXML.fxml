@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contr.SortController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabBuble" text="Buble Sort">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="txtBuble" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabMerge" text="Merge Sort">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="589.0">
+                           <children>
+                              <TextArea fx:id="txtMerge" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabCounting" text="Counting Sort">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="txtCounting" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="350.0" text="&#10;" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabSelection" text="Selection Sort">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="txtSelection" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabInsertion" text="Insertion Sort">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="txtInsertion" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
